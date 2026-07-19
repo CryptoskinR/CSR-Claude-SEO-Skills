@@ -16,11 +16,11 @@
  ╚══════╝╚══════╝ ╚═════╝     ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ```
 
-**[ TWO CLAUDE SKILLS FOR GOOGLE'S INDEX ]**
+**[ CLAUDE SKILLS FOR GOOGLE'S SEARCH ENGINE ]**
 
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-00FF41?style=flat-square&labelColor=0D0D0D)](https://docs.claude.com)
 [![Domain Agnostic](https://img.shields.io/badge/domain-agnostic-00FF41?style=flat-square&labelColor=0D0D0D)](.)
-[![Skills](https://img.shields.io/badge/skills-2-00FF41?style=flat-square&labelColor=0D0D0D)](.)
+[![Skills](https://img.shields.io/badge/skills-SEO-00FF41?style=flat-square&labelColor=0D0D0D)](.)
 [![License](https://img.shields.io/badge/license-MIT-00FF41?style=flat-square&labelColor=0D0D0D)](./LICENSE)
 
 </div>
@@ -31,7 +31,7 @@
 
 <div align="center">
 
-Two portable [Claude Skills](https://docs.claude.com) for anyone who publishes web content and wants Google to actually notice it. Domain-agnostic — drop them into a gaming blog, a finance newsletter, a recipe site, whatever. Each skill detects the niche on its own; no configuration required.
+Portable [Claude Skills](https://docs.claude.com) for anyone who publishes web content and wants Google to actually notice it. Domain-agnostic, drop them into a gaming blog, a finance newsletter, a recipe site, whatever. Each skill detects the niche on its own; no configuration required.
 
 </div>
 
@@ -106,12 +106,20 @@ Pull requests are welcome, as long as they hold to these three rules:
 
 ---
 
+<table align="center">
+<tr>
+<td>
+ 
+```
+[ FOLLOW THE WHITE RABBIT. ]
+```
+
+</td>
+</tr>
+</table>
+
 <div align="center">
-
-```
-[ FOLLOW THE WHITE RABBIT ]
-```
-
+ 
 **License:** MIT — see [`LICENSE`](./LICENSE)
 
 </div>
