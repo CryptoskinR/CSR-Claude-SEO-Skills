@@ -23,11 +23,17 @@
 [![Skills](https://img.shields.io/badge/skills-2-00FF41?style=flat-square&labelColor=0D0D0D)](.)
 [![License](https://img.shields.io/badge/license-MIT-00FF41?style=flat-square&labelColor=0D0D0D)](./LICENSE)
 
+</div>
+
 ---
 
 ## > SYSTEM_OVERVIEW
 
+<div align="center">
+
 Two portable [Claude Skills](https://docs.claude.com) for anyone who publishes web content and wants Google to actually notice it. Domain-agnostic — drop them into a gaming blog, a finance newsletter, a recipe site, whatever. Each skill detects the niche on its own; no configuration required.
+
+</div>
 
 ```
 [+] seo-content-editor        — scores an article, logs every change, returns a rewritten version
@@ -68,6 +74,12 @@ Both files are self-contained — zero external dependencies.
 
 ## > USAGE_EXAMPLES
 
+<div align="center">
+
+A couple of ways these skills get triggered automatically once installed:
+
+</div>
+
 ```
 $ "Review this article for SEO and rewrite it"
   -> triggers seo-content-editor
@@ -79,6 +91,12 @@ $ "This page is live and crawled but won't show up in Google, here's the link"
 ---
 
 ## > CONTRIBUTING
+
+<div align="center">
+
+Pull requests are welcome, as long as they hold to these three rules:
+
+</div>
 
 ```
 [1] Keep skills domain-agnostic - no fixed niche lists
