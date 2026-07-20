@@ -45,6 +45,8 @@ seo-skills/
 ├── seo-content-editor/
 │   └── SKILL.md
 └── seo-indexing-diagnosis/
+│   └── SKILL.md
+└── keyword-topic-research/
     └── SKILL.md
 ```
 
@@ -79,6 +81,9 @@ $ "Review this article for SEO and rewrite it"
 
 $ "This page is live and crawled but won't show up in Google, here's the link"
   -> triggers seo-indexing-diagnosis
+
+$ "Here's our homepage link — what keyword and topic should we write about today?"
+  -> triggers keyword-topic-research
 ```
 
 ---
