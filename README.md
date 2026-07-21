@@ -44,7 +44,9 @@ seo-skills/
 ├── LICENSE
 ├── seo-content-editor/
 │   └── SKILL.md
-└── seo-indexing-diagnosis/
+├── seo-indexing-diagnosis/
+│   └── SKILL.md
+├── seo-rank-gap-analysis/
 │   └── SKILL.md
 └── keyword-topic-research/
     └── SKILL.md
@@ -84,6 +86,9 @@ $ "This page is live and crawled but won't show up in Google, here's the link"
 
 $ "Here's our homepage link — what keyword and topic should we write about today?"
   -> triggers keyword-topic-research
+
+$ "Here's our page and a competitor's page for the same keyword — why do they outrank us?"
+  -> triggers seo-rank-gap-analysis
 ```
 
 ---
