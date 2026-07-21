@@ -42,13 +42,13 @@ Portable [Claude Skills](https://docs.claude.com) for anyone who publishes web c
 seo-skills/
 ├── README.md
 ├── LICENSE
-├── seo-content-editor/
+├── SEO Content Editor/
 │   └── SKILL.md
-├── seo-indexing-diagnosis/
+├── SEO Indexing Diagnosis/
 │   └── SKILL.md
-├── seo-rank-gap-analysis/
+├── SEO Rank Gap Analysis/
 │   └── SKILL.md
-└── keyword-topic-research/
+└── Keyword Topic Research/
     └── SKILL.md
 ```
 
