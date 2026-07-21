@@ -42,13 +42,13 @@ Portable [Claude Skills](https://docs.claude.com) for anyone who publishes web c
 seo-skills/
 ├── README.md
 ├── LICENSE
-├── SEO Content Editor/
+├── CSR SEO Content Editor/
 │   └── SKILL.md
-├── SEO Indexing Diagnosis/
+├── CSR SEO Rank Gap Analysis/
 │   └── SKILL.md
-├── SEO Rank Gap Analysis/
+├── CSR SEO Indexing Diagnosis/
 │   └── SKILL.md
-└── Keyword Topic Research/
+└── CSR Keyword Topic Research/
     └── SKILL.md
 ```
 
@@ -79,16 +79,16 @@ A couple of ways these skills get triggered automatically once installed:
 
 ```
 $ "Review this article for SEO and rewrite it"
-  -> triggers seo-content-editor
+  -> triggers csr-seo-content-editor
 
 $ "This page is live and crawled but won't show up in Google, here's the link"
-  -> triggers seo-indexing-diagnosis
+  -> triggers csr-seo-indexing-diagnosis
 
 $ "Here's our homepage link — what keyword and topic should we write about today?"
-  -> triggers keyword-topic-research
+  -> triggers csr-keyword-topic-research
 
 $ "Here's our page and a competitor's page for the same keyword — why do they outrank us?"
-  -> triggers seo-rank-gap-analysis
+  -> triggers csr-seo-rank-gap-analysis
 ```
 
 ---

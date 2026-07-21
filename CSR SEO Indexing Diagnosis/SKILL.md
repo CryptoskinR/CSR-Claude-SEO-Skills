@@ -1,5 +1,5 @@
 ---
-name: seo-indexing-diagnosis
+name: csr-seo-indexing-diagnosis
 description: Diagnoses why WordPress (or any CMS) pages show as "Crawled" in Google Search Console but are not being indexed (Crawled – currently not indexed). Use this whenever the user shares one or more page links or page source and says the page is live, has been crawled, but isn't showing up in Google or isn't indexed — even if they don't say "SEO" or "indexing" explicitly, e.g. "why isn't this page showing up?". Domain-agnostic: works for any site or content niche, not just a specific industry.
 ---
 

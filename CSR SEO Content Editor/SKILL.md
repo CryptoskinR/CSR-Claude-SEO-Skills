@@ -1,5 +1,5 @@
 ---
-name: seo-content-editor
+name: csr-seo-content-editor
 description: Edits and optimizes articles for SEO and Google ranking performance. Use whenever the user provides an article for review, editing, SEO improvement, content-quality checking, or article analysis — even if the words "SEO" or "skill" aren't mentioned. Works across any content niche or domain (gaming, fragrance, finance, health, travel, tech, food, legal, etc.) by automatically detecting the domain from the text and applying the appropriate evaluation criteria — no fixed domain list required.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: seo-rank-gap-analysis
+name: csr-seo-rank-gap-analysis
 description: "Diagnoses why a competitor's page outranks the user's own page for a specific target query/keyword — even when the competitor's page looks technically or content-wise weaker. Use this skill whenever the user provides two links (their own page and a competitor's page) that compete for the same topic/keyword and asks why the competitor ranks higher, or how to overtake the competitor — even if the words 'SEO' or 'ranking' are not used explicitly, e.g. 'why is this page beating us?', 'how do I outrank this site?', 'what did this competitor do better?'. Fully general-purpose: works for any industry, any site type (e-commerce, news, content, service, B2B), and any site/content language — always analyze and respond in the language the user is communicating in (or the language of the pages being compared), not any fixed language."
 ---
 
