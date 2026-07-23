@@ -44,6 +44,8 @@ seo-skills/
 ├── LICENSE
 ├── CSR SEO Content Editor/
 │   └── SKILL.md
+├── CSR NEWS Article Writer/
+│   └── SKILL.md
 ├── CSR SEO Rank Gap Analysis/
 │   └── SKILL.md
 ├── CSR SEO Indexing Diagnosis/
@@ -89,6 +91,9 @@ $ "Here's our homepage link — what keyword and topic should we write about tod
 
 $ "Here's our page and a competitor's page for the same keyword — why do they outrank us?"
   -> triggers csr-seo-rank-gap-analysis
+
+$ "Here's a link to this story, write a NEWS article about it" (or just give a topic, no link)
+  -> triggers csr-news-article-writer
 ```
 
 ---
