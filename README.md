@@ -39,7 +39,7 @@ Portable [Claude Skills](https://docs.claude.com) for anyone who publishes web c
 ## > DIRECTORY_LISTING
 
 ```
-seo-skills/
+CSR-Claude-SEO-Skills/
 ├── README.md
 ├── LICENSE
 ├── CSR SEO Content Editor/
