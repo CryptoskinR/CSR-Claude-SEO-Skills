@@ -50,6 +50,8 @@ CSR-Claude-SEO-Skills/
 │   └── SKILL.md
 ├── CSR SEO Indexing Diagnosis/
 │   └── SKILL.md
+├── CSR Analysis Review Writer/
+│   └── SKILL.md
 └── CSR Keyword Topic Research/
     └── SKILL.md
 ```
@@ -94,6 +96,9 @@ $ "Here's our page and a competitor's page for the same keyword — why do they 
 
 $ "Here's a link to this story, write a NEWS article about it" (or just give a topic, no link)
   -> triggers csr-news-article-writer
+
+$ "Here's a topic — write an ANALYSIS/REVIEW article about it, category: analysis and review" (no link needed, just a topic)
+  -> triggers csr-analysis-review-writer
 ```
 
 ---
