@@ -1,6 +1,6 @@
 ---
 name: csr-seo-content-editor
-description: Edits and optimizes articles for SEO and Google ranking performance. Use whenever the user provides an article for review, editing, SEO improvement, content-quality checking, or article analysis — even if the words "SEO" or "skill" aren't mentioned. Works across any content niche or domain (gaming, fragrance, finance, health, travel, tech, food, legal, etc.) by automatically detecting the domain from the text and applying the appropriate evaluation criteria — no fixed domain list required.
+description: Edits and optimizes articles for SEO and Google ranking performance. Use whenever the user provides an article for review, editing, SEO improvement, content-quality checking, or article analysis — even if the words "SEO" or "skill" aren't mentioned. Works across any content niche or domain (gaming, fragrance, finance, health, travel, tech, food, legal, etc.) by automatically detecting the domain from the text and applying the appropriate evaluation criteria — no fixed domain list required. Includes a check for uniform sentence/paragraph rhythm (a subtle AI-writing tell) and fixes it with targeted variance edits.
 ---
 
 # SEO Content Editor
@@ -36,6 +36,24 @@ Flag every instance of:
 - [ ] The same idea repeated with different phrasing across 3+ paragraphs
 - [ ] Unnecessary/forced metaphors ("the game world is a metaphor for a shell")
 - [ ] A final paragraph that just re-summarizes the whole article
+- [ ] **Uniform sentence-length rhythm** (see "Sentence & Paragraph Rhythm Variance" below — check this explicitly, it's easy to miss on a normal read-through)
+
+### Section A-1 — Sentence & Paragraph Rhythm Variance (a subtle but strong AI tell)
+
+Even when every sentence is factually correct and well-written, LLM-generated prose tends to produce sentences — and paragraphs — that cluster tightly around a similar length (word/character count). Most sentences in a paragraph land in a narrow band (e.g. 15–25 words), with few or no very short (4–8 word) punchy sentences and few or no longer, more complex compound sentences. The same flattening often shows up one level up: paragraphs that are all roughly the same length, in the same 3–5 sentence shape, one after another. Human writers naturally vary this rhythm — a short declarative sentence for emphasis, then a longer one that unpacks it; a two-sentence paragraph right after a dense one — and that variance itself is part of what reads as "written by a person."
+
+**How to detect it (Step 2):**
+- For each paragraph, roughly estimate words per sentence — exact counting isn't necessary, a quick eyeball pass is enough.
+- Flag any paragraph where every sentence clusters in a narrow band (e.g. all between 15–25 words, none under 10 or over 35) — the flat rhythm itself is the signal, not any single sentence's length.
+- Zoom out one level: flag stretches of the article where consecutive paragraphs are all a similar length and sentence count, with no short (1–2 sentence) or long (6+ sentence) paragraph breaking the pattern.
+- This is a distinct check from "sentences over 40 words" (Section D) — a paragraph can pass that rule and still fail this one if every sentence is a suspiciously similar medium length.
+
+**How to fix it (Step 3):**
+- Do NOT rewrite every sentence — that defeats "minimum change, maximum impact." In each flagged paragraph, make 1–2 targeted rhythm changes: split one longer sentence into a short punchy one plus a follow-up, or merge two adjacent short sentences into one longer one with a semicolon or conjunction — whichever restores contrast with the paragraph's neighbors.
+- At the paragraph level, vary opening-sentence length across consecutive paragraphs, and where the article allows it, let at least one paragraph run short (1–2 sentences) for emphasis rather than defaulting to a uniform 3–5 sentence block throughout.
+- Prefer concentrating changes where the flattening is worst rather than spreading small tweaks evenly across the whole article.
+- Log each rhythm change in the change log under its own line item, same as any other edit, with Reason: "sentence/paragraph rhythm uniformity."
+- Add a tally line to the Summary of Changes: `Sentences/paragraphs rebalanced for rhythm: [count]`.
 
 ### Section B — E-E-A-T
 - [ ] Is the author identified?
@@ -91,7 +109,7 @@ PART 1: ANALYTICAL REPORT
 📊 Overall Score: [X/100]
 
 Scored across 4 criteria (25 points each):
-- AI Patterns: [X/25] — [brief note]
+- AI Patterns: [X/25] — [brief note; flag here if sentence/paragraph rhythm was uniform]
 - E-E-A-T: [X/25] — [brief note]
 - SEO Structure: [X/25] — [brief note]
 - Content Quality: [X/25] — [brief note]
@@ -125,6 +143,7 @@ Summary of Changes:
 - Sources added/clarified: [count]
 - Paragraphs merged/removed: [count]
 - Sentences rewritten: [count]
+- Sentences/paragraphs rebalanced for rhythm: [count]
 
 ═══════════════════════════════════════
 PART 3: REVISED ARTICLE
@@ -145,6 +164,7 @@ PART 3: REVISED ARTICLE
 5. Sentences over ~40 words → split into two
 6. Overused AI-style intensifiers → replace with something more specific/concrete
 7. Arithmetic/factual inconsistencies → correct and log the change
+8. Uniform sentence- or paragraph-length rhythm → apply 1–2 targeted split/merge changes per flagged spot to restore natural variance (see Section A-1) — don't rewrite the whole paragraph for this alone
 
 ### What NOT to change:
 1. Correct, accurate technical/specialized information
