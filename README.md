@@ -52,7 +52,10 @@ CSR-Claude-SEO-Skills/
 │   └── SKILL.md
 ├── CSR Analysis Review Writer/
 │   └── SKILL.md
-└── CSR Keyword Topic Research/
+├── CSR Keyword Topic Research/
+│   └── SKILL.md
+└──CSR AI Signs Writing Cleanup/
+    ├── Pattern Catalog.md
     └── SKILL.md
 ```
 
@@ -99,6 +102,9 @@ $ "Here's a link to this story, write a NEWS article about it" (or just give a t
 
 $ "Here's a topic — write an ANALYSIS/REVIEW article about it, category: analysis and review" (no link needed, just a topic)
   -> triggers csr-analysis-review-writer
+
+$ "Clean this of AI writing patterns" / "make this sound less like ChatGPT" / "humanize this draft before I publish it"
+  -> triggers csr-ai-signs-writing-cleanup (any language, any content type — article, story, novel chapter, script, product copy)
 ```
 
 ---
