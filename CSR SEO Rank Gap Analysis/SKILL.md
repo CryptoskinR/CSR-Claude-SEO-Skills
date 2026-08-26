@@ -7,7 +7,7 @@ description: "Diagnoses why a competitor's page outranks the user's own page for
 
 ## Purpose
 
-Take the user's own page + a competitor's page that compete for the same query → check technical, content, search-intent, E-E-A-T, and current algorithm-update factors together → produce a specific hypothesis for the rank gap plus prioritized, actionable fixes — not a generic recycled checklist.
+Take the user's own page + a competitor's page that compete for the same query → check technical, content, search-intent, semantic/entity, E-E-A-T, and current algorithm-update factors together → produce a specific hypothesis for the rank gap plus prioritized, actionable fixes — not a generic recycled checklist.
 
 This skill is for when the user has a *specific, named* competitor and wants to know why they're behind, not a general site-wide SEO audit without a comparison.
 
@@ -67,6 +67,8 @@ Use `web_search` for the target keyword and, without directly quoting search res
 
 This step is often the most important clue: a page that looks "more complete" or "more technical" frequently underperforms simply because its format doesn't match what Google wants to show for that specific query.
 
+**Semantic & Entity Gap Analysis (NLP/LSI):** Critically compare the semantic depth of both pages. Identify specific NLP entities, LSI keywords, and topical sub-clusters that are well-covered on the competitor's page but are missing, superficial, or underutilized on the user's page. Do not list generic keywords; focus strictly on highly relevant, context-rich terms that signal Topical Authority to Google's NLP models. This gap is a direct input into the Topical/E-E-A-T comparison in Step 6 below, and into the recommended actions.
+
 ---
 
 ## Step 3 — E-E-A-T and real-experience signals
@@ -104,7 +106,7 @@ Based on major 2026 Google core updates (especially the March 2026 update):
 
 ## Step 6 — Estimate an implicit rank position for each page
 
-Always give a concrete, numbered rank estimate for both pages for the target query — not just a qualitative "the competitor is stronger" verdict. Base it on everything gathered in Steps 1–5: relative domain strength, page-level technical/content quality, publish timing relative to when the story/topic broke (critical for news/trending queries — a multi-day lag behind the first outlets to cover a breaking topic is often a bigger factor than on-page quality), sourcing/E-E-A-T gaps, and SERP intent match.
+Always give a concrete, numbered rank estimate for both pages for the target query — not just a qualitative "the competitor is stronger" verdict. Base it on everything gathered in Steps 1–5 (including the semantic/entity gap from Step 2): relative domain strength, page-level technical/content quality, topical/semantic completeness, publish timing relative to when the story/topic broke (critical for news/trending queries — a multi-day lag behind the first outlets to cover a breaking topic is often a bigger factor than on-page quality), sourcing/E-E-A-T gaps, and SERP intent match.
 
 - Give an estimated rank range for each page (e.g. "positions 1–5" / "position ~20+"), not a single false-precise number.
 - Always state the reasoning behind each estimate explicitly — which specific factors from Steps 1–5 drove the estimate up or down.
@@ -127,6 +129,9 @@ Give the output in chat (not a separate file, unless the user explicitly asks fo
 
 🎯 Search intent match
 [Explain what format the current SERP is favoring, and which page matches it better]
+
+🧠 Semantic & Entity Gap (NLP/LSI)
+[List the specific entities/sub-topics the competitor covers that the user's page doesn't, or covers superficially]
 
 ⭐ E-E-A-T and real-experience signals
 [Qualitative comparison]
