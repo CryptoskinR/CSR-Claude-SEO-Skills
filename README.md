@@ -48,6 +48,8 @@ CSR-Claude-SEO-Skills/
 │   └── SKILL.md
 ├── CSR SEO Rank Gap Analysis/
 │   └── SKILL.md
+├── CSR SEO UIUX Audit Report/
+│   └── csr-seo-uiux-audit-report.skill
 ├── CSR SEO Indexing Diagnosis/
 │   └── SKILL.md
 ├── CSR Analysis Review Writer/
@@ -105,6 +107,9 @@ $ "Here's a topic — write an ANALYSIS/REVIEW article about it, category: analy
 
 $ "Clean this of AI writing patterns" / "make this sound less like ChatGPT" / "humanize this draft before I publish it"
   -> triggers csr-ai-signs-writing-cleanup (any language, any content type — article, story, novel chapter, script, product copy)
+
+$ "Here's our site link and the Screaming Frog export — build a full SEO and UI/UX report for the client"
+  -> triggers csr-seo-uiux-audit-report (one-page executive summary first, then SEO and UI/UX sections, roadmap and appendix; works without Search Console or analytics access; report is written in the language you chat in)
 ```
 
 ---
